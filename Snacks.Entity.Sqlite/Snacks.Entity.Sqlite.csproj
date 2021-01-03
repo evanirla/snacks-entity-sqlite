@@ -2,11 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/evanirla/snacks-entity-sqlite</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/evanirla/snacks-entity-sqlite</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>entity-framework, dot-net-core, sqlite</PackageTags>
+    <Version>1.2.0</Version>
+    <Description>Sqlite extensions for the Snacks.Entity.Core package.</Description>
+    <Copyright>2020 - Evan Irla</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.10" />
-    <PackageReference Include="Snacks.Entity.Core" Version="1.1.0" />
+    <PackageReference Include="Snacks.Entity.Core" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
